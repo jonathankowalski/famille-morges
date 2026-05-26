@@ -25,6 +25,8 @@ export default defineConfig({
   },
 
   build: {
+    outDir: 'build/public/assets',
+    emptyOutDir: false,
     manifest: 'manifest.json',
   },
 
