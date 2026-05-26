@@ -24,6 +24,10 @@ export default defineConfig({
     },
   },
 
+  build: {
+    manifest: 'manifest.json',
+  },
+
   server: {
     watch: {
       ignored: ['**/storage/**', '**/tmp/**'],
