@@ -1,11 +1,41 @@
+import { Logo } from '@/components/ui/logo'
+import { motion, useTransform, useScroll } from "motion/react"
+import { useRef, useEffect } from 'react'
+
 export function Hero() {
+  const ref = useRef<HTMLElement | null>(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  })
+
+  // map element scroll progress to a parallax offset (px)
+  const y = useTransform(scrollYProgress, [0, 1], [-120, 120])
+
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.onChange((latest) => {
+      console.log('scrollYProgress:', latest, 'y:', y.get())
+    })
+    return unsubscribe
+  }, [scrollYProgress, y])
+
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 pb-16 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+    <section ref={ref} className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20 pb-16 px-4">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/videos/hero.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden
+      />
+
+      <motion.div style={{ y }} className="relative z-10 max-w-4xl mx-auto text-center bg-white/50 text-foreground backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/10">
         {/* Logo placeholder */}
         <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center">
-            <span className="font-serif text-4xl md:text-5xl text-primary">EF</span>
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+            <Logo className="w-32 h-32 md:w-40 md:h-40 object-cover" />
           </div>
         </div>
 
@@ -39,7 +69,7 @@ export function Hero() {
             Voir les événements
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

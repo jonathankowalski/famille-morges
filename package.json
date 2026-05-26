@@ -119,6 +119,7 @@
     "input-otp": "1.4.2",
     "lucide-react": "^1.16.0",
     "luxon": "^3.7.2",
+    "motion": "^12.40.0",
     "react": "^19.2.5",
     "react-day-picker": "9.13.2",
     "react-dom": "^19.2.5",

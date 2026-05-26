@@ -106,8 +106,12 @@ export function Association() {
           <p className="text-muted-foreground text-center md:text-left">
             Avec le soutien de la Ville de Morges
           </p>
-          <div className="w-24 h-24 rounded-lg bg-muted flex items-center justify-center text-muted-foreground text-xs">
-            Logo Ville
+          <div className="w-24 h-24 rounded-lg bg-muted flex items-center justify-center">
+            <img
+              src="/images/logo_morges.svg"
+              alt="Logo Ville de Morges"
+              className="max-w-full max-h-full p-2 object-contain"
+            />
           </div>
         </div>
 

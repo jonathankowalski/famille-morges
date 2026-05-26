@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Logo from "./ui/logo";
 
 const navLinks = [
   { href: "#association", label: "Notre association" },
@@ -22,14 +23,15 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-card/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-card/95 backdrop-blur-sm shadow-sm" : "bg-card/50"
         }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-serif text-lg">EF</span>
+
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center overflow-hidden">
+              <Logo className="w-8 h-8 md:w-10 md:h-10" />
             </div>
             <span className="font-serif text-lg md:text-xl text-foreground">
               Espace Famille Morges
