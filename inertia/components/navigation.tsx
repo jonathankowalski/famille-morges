@@ -30,8 +30,8 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-3">
 
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center overflow-hidden">
-              <Logo className="w-8 h-8 md:w-10 md:h-10" />
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-primary flex items-center justify-center overflow-hidden">
+              <Logo className="w-8 h-8 md:w-10 md:h-10 object-cover" />
             </div>
             <span className="font-serif text-lg md:text-xl text-foreground">
               Espace Famille Morges
