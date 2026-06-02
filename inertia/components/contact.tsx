@@ -1,13 +1,5 @@
 import { MapPin, Phone, Mail, Building } from "lucide-react";
 
-const committeeMembers = [
-  "Julie Flohic (Présidente)",
-  "Marie Dupont",
-  "Sophie Martin",
-  "Claire Bernard",
-  "Isabelle Roux",
-];
-
 export function Contact() {
   return (
     <section id="contact" className="py-20 px-4 bg-background">
@@ -40,8 +32,8 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground mb-1">Téléphone</p>
-                <a 
-                  href="tel:+41792832867" 
+                <a
+                  href="tel:+41792832867"
                   className="text-foreground hover:text-primary transition-colors"
                 >
                   +41 79 283 28 67
@@ -56,8 +48,8 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground mb-1">Email</p>
-                <a 
-                  href="mailto:contact@espacefamille-morges.ch" 
+                <a
+                  href="mailto:contact@espacefamille-morges.ch"
                   className="text-foreground hover:text-primary transition-colors break-all"
                 >
                   contact@espacefamille-morges.ch
@@ -77,18 +69,6 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Committee members */}
-          <div className="mt-10 pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground mb-4">Membres du comité</p>
-            <ul className="grid sm:grid-cols-2 gap-2">
-              {committeeMembers.map((member, index) => (
-                <li key={index} className="text-foreground flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-primary" />
-                  {member}
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </section>
