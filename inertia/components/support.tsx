@@ -19,9 +19,9 @@ export function Support() {
                 Faire un don
               </h3>
             </div>
-            
+
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Votre générosité nous permet de continuer à offrir des activités 
+              Votre générosité nous permet de continuer à offrir des activités
               gratuites et de qualité aux familles de Morges.
             </p>
 
@@ -47,15 +47,21 @@ export function Support() {
                 Devenir membre
               </h3>
             </div>
-            
+
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Rejoignez notre association et soutenez notre mission auprès 
+              Rejoignez notre association et soutenez notre mission auprès
               des jeunes familles de la région.
             </p>
 
             <div className="bg-muted rounded-xl p-6 mb-6">
               <p className="text-sm text-muted-foreground mb-1">Cotisation individuelle</p>
               <p className="text-3xl font-serif text-primary">50 CHF</p>
+              <p className="text-sm text-muted-foreground mt-1">par année</p>
+            </div>
+
+            <div className="bg-muted rounded-xl p-6 mb-6">
+              <p className="text-sm text-muted-foreground mb-1">Cotisation entreprise</p>
+              <p className="text-3xl font-serif text-primary">150 CHF</p>
               <p className="text-sm text-muted-foreground mt-1">par année</p>
             </div>
 
@@ -68,8 +74,8 @@ export function Support() {
               {"S'inscrire via Google Forms"}
             </a>
 
-            <p className="text-sm text-muted-foreground mt-4 text-center">
-              Professionnels et fondations : contactez-nous par email
+            <p className="text-md text-muted-foreground mt-4 text-center">
+              Professionnels : contactez-nous par email
             </p>
           </div>
         </div>
