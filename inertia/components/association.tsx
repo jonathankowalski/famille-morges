@@ -26,11 +26,12 @@ const objectives = [
 const badges = ["Solidarité", "Rencontres", "Soutien"];
 
 const committeeMembers = [
-  "Julie Flohic (Présidente)",
-  "Marie Dupont",
-  "Sophie Martin",
-  "Claire Bernard",
-  "Isabelle Roux",
+  "Sarah Aouad (communication, réseaux sociaux)",
+  "Cécile Blumenfeld (trésorière)",
+  "Julie Flohic (présidente)",
+  "Anita Krüger (balades poussettes et groupe whatsapp)",
+  "Mélanie Samson (secrétaire)",
+  "Kelda Weeks (site internet et graphisme)"
 ];
 
 export function Association() {
@@ -97,6 +98,7 @@ export function Association() {
               </li>
             ))}
           </ul>
+          <p className="text-muted-foreground text-sm mt-4 italic">(par ordre alphabétique)</p>
         </div>
 
         {/* City support */}
