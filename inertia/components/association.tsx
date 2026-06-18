@@ -87,9 +87,7 @@ export function Association() {
             Notre comité
           </h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Notre association est dirigée par un comité de sages-femmes bénévoles, 
-            passionnées par le soutien aux jeunes familles. Leur expertise professionnelle 
-            garantit un accompagnement de qualité.
+            Sages-femmes venues d’horizons différents, toutes passionnées par l’accompagnement des parents. Chacune apporte son expertise unique, et ensemble, nous construisons un projet riche et complet, pour offrir des informations de qualité et un véritable soutien aux familles. Nous nous engageons bénévolement pour faire vivre cette association.
           </p>
           <ul className="grid sm:grid-cols-2 gap-2">
             {committeeMembers.map((member, index) => (
