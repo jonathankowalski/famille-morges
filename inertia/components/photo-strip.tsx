@@ -3,14 +3,14 @@ import { motion, useAnimation } from "framer-motion";
 
 export function PhotoStrip() {
   const placeholders = [
-    "public/images/strip/66b2365c-915a-436e-bf4c-a3369c625df8.jpg",
-    "public/images/strip/72a84aad-f49e-4d5c-86ea-32db82615d50.jpg",
-    "public/images/strip/7de97305-e034-466d-8517-ae9d906fd811.jpg",
-    "public/images/strip/85850540-7fe3-430d-857b-b715f5201995.jpg",
-    "public/images/strip/Inauguration 1.jpg",
-    "public/images/strip/MDA EFM 1.jpg",
-    "public/images/strip/a4346c60-e1ab-4941-81a2-d07978214c71.jpg",
-    "public/images/strip/ad40b4b4-5e20-432d-a82d-86fb402e74a0.jpg"
+    "/images/strip/66b2365c-915a-436e-bf4c-a3369c625df8.jpg",
+    "/images/strip/72a84aad-f49e-4d5c-86ea-32db82615d50.jpg",
+    "/images/strip/7de97305-e034-466d-8517-ae9d906fd811.jpg",
+    "/images/strip/85850540-7fe3-430d-857b-b715f5201995.jpg",
+    "/images/strip/Inauguration 1.jpg",
+    "/images/strip/MDA EFM 1.jpg",
+    "/images/strip/a4346c60-e1ab-4941-81a2-d07978214c71.jpg",
+    "/images/strip/ad40b4b4-5e20-432d-a82d-86fb402e74a0.jpg"
   ];
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const innerRef = useRef<HTMLDivElement | null>(null);
