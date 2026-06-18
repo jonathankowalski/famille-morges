@@ -44,11 +44,9 @@ export function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed mb-4 text-balance">
-          Des{" "}
-          <span className="font-semibold text-primary bg-primary/10 px-2 py-1 rounded">
+          Rencontres et partages pour les jeunes parents et bébés <span className="font-semibold text-primary bg-primary/10 px-2 py-1 rounded">
             activités gratuites
-          </span>{" "}
-          pour les parents et leurs bébés à Morges
+          </span>
         </p>
 
         <p className="text-muted-foreground text-base md:text-lg mt-8 italic">
