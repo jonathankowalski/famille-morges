@@ -43,15 +43,14 @@ export function Association() {
         </h2>
 
         {/* Quote block */}
-        <blockquote className="relative max-w-3xl mx-auto mb-16">
-          <div className="absolute -top-4 -left-4 text-6xl text-primary/20 font-serif">
-            {'"'}
-          </div>
-          <p className="text-xl md:text-2xl text-foreground italic text-center leading-relaxed pl-8">
-            Il faut tout un village pour élever un enfant
-          </p>
-          <div className="absolute -bottom-4 -right-4 text-6xl text-primary/20 font-serif rotate-180">
-            {'"'}
+        <blockquote className="relative mx-auto mb-16">
+          <div className="text-xl md:text-2xl text-foreground italic text-center leading-relaxed pl-8">
+            Des sages-femmes se mobilisent pour créer :<br />
+            <div className="flex justify-center md:gap-8 md:flex-row flex-col mt-4">
+              <p className="text-foreground text-center">un accueil chaleureux et accessible à tous</p>
+              <p className="text-foreground text-center">des liens sociaux et combattre l’isolement</p>
+              <p className="text-foreground text-center">un espace pour se ressourcer et échanger</p>
+            </div>
           </div>
         </blockquote>
 
