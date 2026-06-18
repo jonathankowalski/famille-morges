@@ -1,27 +1,4 @@
-import { Heart, Users, HandHeart, Baby, BookOpen } from "lucide-react";
-
-const objectives = [
-  {
-    icon: Heart,
-    text: "Offrir un espace de rencontre chaleureux et bienveillant pour les jeunes familles",
-  },
-  {
-    icon: Users,
-    text: "Favoriser les échanges entre parents vivant des expériences similaires",
-  },
-  {
-    icon: HandHeart,
-    text: "Soutenir les parents dans leur nouveau rôle avec des conseils de professionnels",
-  },
-  {
-    icon: Baby,
-    text: "Proposer des activités adaptées aux bébés et favorisant leur éveil",
-  },
-  {
-    icon: BookOpen,
-    text: "Informer sur les ressources locales disponibles pour les familles",
-  },
-];
+import { Objectives } from "./objectives";
 
 const badges = ["Solidarité", "Rencontres", "Soutien"];
 
@@ -65,22 +42,12 @@ export function Association() {
             </span>
           ))}
         </div>
+      </div>
 
-        {/* Objectives */}
-        <div className="grid gap-6 md:gap-8 mb-16">
-          {objectives.map((objective, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-4 p-4 rounded-lg hover:bg-muted transition-colors"
-            >
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <objective.icon className="w-6 h-6 text-primary" />
-              </div>
-              <p className="text-foreground leading-relaxed pt-2">{objective.text}</p>
-            </div>
-          ))}
-        </div>
+      {/* Objectives */}
+      <Objectives />
 
+      <div className="max-w-5xl mx-auto">
         {/* Committee info */}
         <div className="bg-muted rounded-2xl p-8 mb-12">
           <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
