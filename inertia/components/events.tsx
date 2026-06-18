@@ -3,13 +3,13 @@ import { MapPin, Calendar, Camera } from "lucide-react";
 const venues = [
   {
     name: "Espace Couvaloup",
-    address: "Rue de Couvaloup 12",
+    address: "Rue de Couvaloup 12, 1110 Morges",
     activity: "Balades poussettes",
     schedule: "2 lundis/mois",
   },
   {
     name: "Maison des associations",
-    address: "Rue des Fossés 16",
+    address: "Rue des Fossés 16, 1110 Morges",
     activity: "Rencontres thématiques",
     schedule: "Certains mercredis/samedis",
   },
@@ -22,6 +22,19 @@ export function Events() {
         <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">
           Événements
         </h2>
+
+        <h3 className="text-lg md:text-xl text-foreground text-center mb-8">
+          Pour connaître les prochaines dates, consultez notre page Instagram et/ou rejoignez notre groupe WhatsApp
+        </h3>
+
+        <div className="mb-12 flex justify-center">
+          <a href="https://www.instagram.com/espacefamillemorges" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline">
+            @espacefamillemorges sur Instagram
+          </a>
+          <a href="https://chat.whatsapp.com/Bnl0zW5qoBd9FfTyIyrGji?mode=hq1tswi" target="_blank" rel="noopener noreferrer" className="ml-4 text-sm text-primary hover:underline">
+            Rejoindre le groupe WhatsApp
+          </a>
+        </div>
 
         {/* Venue cards */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -54,33 +67,17 @@ export function Events() {
             Consultez notre page Instagram et rejoignez notre groupe WhatsApp pour toutes les dates
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-8 sm:gap-24">
             {/* Instagram */}
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors"
-            >
-              <Camera className="w-6 h-6 text-primary" />
-              <span className="text-foreground font-medium">@espacefamillemorges</span>
-            </a>
+            <div>
+              <img src="/images/qrcode_instagram.png" alt="QR code Instagram" className="w-32 h-32 rounded-lg border border-border" />
+              <img src="/images/instagram.png" alt="Instagram logo" className="w-8 h-8 mt-2 mx-auto" />
+            </div>
 
             {/* WhatsApp QR */}
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-xs text-muted-foreground text-center px-2">
-                  QR Code WhatsApp
-                </span>
-              </div>
-              <a
-                href="https://wa.me"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline"
-              >
-                Rejoindre le groupe
-              </a>
+            <div>
+              <img src="/images/qrcode_whatsapp.png" alt="QR code WhatsApp" className="w-32 h-32 rounded-lg border border-border" />
+              <img src="/images/whatsapp.svg" alt="WhatsApp logo" className="h-6 mt-2 mx-auto" />
             </div>
           </div>
         </div>
