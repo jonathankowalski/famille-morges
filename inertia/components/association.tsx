@@ -21,11 +21,13 @@ export function Association() {
 
         {/* Quote block */}
         <blockquote className="relative mx-auto mb-16">
-          <div className="text-xl md:text-2xl text-foreground italic text-center leading-relaxed pl-8">
+          <div className="text-xl md:text-2xl text-foreground text-center leading-relaxed">
             Des sages-femmes se mobilisent pour créer :<br />
-            <div className="flex justify-center md:gap-8 md:flex-row flex-col mt-4">
+            <div className="flex justify-center md:gap-8 md:flex-row flex-col mt-4 items-center">
               <p className="text-foreground text-center">un accueil chaleureux et accessible à tous</p>
-              <p className="text-foreground text-center">des liens sociaux et combattre l’isolement</p>
+              <div className="hidden md:block w-px h-8 bg-foreground/30" />
+              <p className="text-foreground text-center">des liens sociaux et combattre l'isolement</p>
+              <div className="hidden md:block w-px h-8 bg-foreground/30" />
               <p className="text-foreground text-center">un espace pour se ressourcer et échanger</p>
             </div>
           </div>
@@ -84,7 +86,7 @@ export function Association() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#"
+            href="/documents/statuts.pdf"
             className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors font-medium"
           >
             Télécharger les statuts (PDF)

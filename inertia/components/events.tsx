@@ -10,7 +10,7 @@ const venues = [
   {
     name: "Maison des associations",
     address: "Rue des Fossés 16, 1110 Morges",
-    activity: "Rencontres thématiques",
+    activity: "Rencontres thématiques / Permanences ",
     schedule: "Certains mercredis/samedis",
   },
 ];

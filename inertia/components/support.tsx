@@ -31,9 +31,12 @@ export function Support() {
               <p className="font-mono text-foreground text-lg break-all">
                 CH1100767000T 5663 2365
               </p>
-              <p className="text-sm text-muted-foreground mt-4">
-                Association Espace Famille Morges
-              </p>
+              <div className="text-sm text-muted-foreground mt-4">
+                <p>
+                  Association Espace Famille Morges
+                </p>
+                <p>Chemin du Petit-Dézaley 7, 1110 Morges</p>
+              </div>
             </div>
           </div>
 
@@ -66,7 +69,7 @@ export function Support() {
             </div>
 
             <a
-              href="https://forms.google.com"
+              href="https://docs.google.com/forms/d/1mW3UjgN42a2gSRy-TsG4aIb5Yhy1a2tFs4zPFPRUjNM/viewform?edit_requested=true&pli=1"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"

@@ -10,7 +10,12 @@ export function PhotoStrip() {
     "/images/strip/Inauguration 1.jpg",
     "/images/strip/MDA EFM 1.jpg",
     "/images/strip/a4346c60-e1ab-4941-81a2-d07978214c71.jpg",
-    "/images/strip/ad40b4b4-5e20-432d-a82d-86fb402e74a0.jpg"
+    "/images/strip/ad40b4b4-5e20-432d-a82d-86fb402e74a0.jpg",
+    "/images/strip/EFM1.jpg",
+    "/images/strip/EFM2.jpg",
+    "/images/strip/EFM3.jpg",
+    "/images/strip/EFM4.jpg",
+    "/images/strip/EFM5.jpg",
   ];
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const innerRef = useRef<HTMLDivElement | null>(null);
